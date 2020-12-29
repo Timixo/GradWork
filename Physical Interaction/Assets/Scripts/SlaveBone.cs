@@ -12,13 +12,14 @@ public class SlaveBone : MonoBehaviour
 
     private ConfigurableJoint _joint = null;
 
-    private Transform _master = null;
+    [SerializeField]
+    private MasterBone _master = null;
 
     private Quaternion _jointRotation;
     private Quaternion _initLocalRotation;
     private Quaternion _initGlobalRotation;
 
-    public Transform _Master
+    public MasterBone _Master
     { 
         get
         {
@@ -74,7 +75,7 @@ public class SlaveBone : MonoBehaviour
                 if (_joint.targetPosition != Vector3.zero)
                     _joint.targetPosition = Vector3.zero;
 
-                _joint.connectedAnchor = _master.position;
+                _joint.connectedAnchor = _master._LastStableTransform.position;
             }
         }
 
@@ -84,8 +85,8 @@ public class SlaveBone : MonoBehaviour
             if (_joint.connectedBody != null && !_joint.configuredInWorldSpace)
             {
                 result = Quaternion.Inverse(_jointRotation);
-                result *= Quaternion.Inverse(_master.localRotation);
                 result *= _initLocalRotation;
+                result *= Quaternion.Inverse(_master._LastStableTransform.localRotation);
                 result *= _jointRotation;
 
                 _joint.targetRotation = result;
@@ -94,7 +95,7 @@ public class SlaveBone : MonoBehaviour
             {
                 result = Quaternion.Inverse(_jointRotation);
                 result *= _initGlobalRotation;
-                result *= Quaternion.Inverse(_master.rotation);
+                result *= Quaternion.Inverse(_master._LastStableTransform.rotation);
                 result *= _jointRotation;
 
                 _joint.targetRotation = result;
