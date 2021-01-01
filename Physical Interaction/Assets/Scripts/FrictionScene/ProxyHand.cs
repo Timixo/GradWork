@@ -63,17 +63,17 @@ public class ProxyHand : MonoBehaviour
         if (_skeletonData.Bones.Count != _proxyHandBones.Length)
             return;
 
-        //if (_hand.IsDataValid && _hand.IsDataHighConfidence)
-        //{
+        if (_hand.IsDataValid && _hand.IsDataHighConfidence)
+        {
             _proxyHandBones[0]._master.transform.position = _skeletonData.Bones[0].Transform.position;
             _proxyHandBones[0]._master.transform.rotation = _skeletonData.Bones[0].Transform.rotation;
-        //}
-        //else
-        //    return;
+        }
+        else
+            return;
 
         for (int bone = 1; bone < _skeletonData.Bones.Count; bone++)
         {
-            if (_proxyHandBones[bone]._master/* && (_hand.GetFingerConfidence(_proxyHandBones[bone]._master._Finger) == OVRHand.TrackingConfidence.High)*/)
+            if (_proxyHandBones[bone]._master && (_hand.GetFingerConfidence(_proxyHandBones[bone]._master._Finger) == OVRHand.TrackingConfidence.High))
                 _proxyHandBones[bone]._master.transform.rotation = _skeletonData.Bones[bone].Transform.rotation;
         }
     }
