@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 79997723}
   - component: {fileID: 79997725}
   - component: {fileID: 79997726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &79997726
 LineRenderer:
@@ -309,7 +310,7 @@ GameObject:
   - component: {fileID: 91536509}
   - component: {fileID: 91536510}
   - component: {fileID: 91536511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &91536511
 LineRenderer:
@@ -485,7 +487,7 @@ GameObject:
   - component: {fileID: 145063449}
   - component: {fileID: 145063451}
   - component: {fileID: 145063452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,6 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &145063452
 LineRenderer:
@@ -738,7 +741,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &292363426
 GameObject:
@@ -753,7 +756,7 @@ GameObject:
   - component: {fileID: 292363429}
   - component: {fileID: 292363430}
   - component: {fileID: 292363431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,6 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &292363431
 LineRenderer:
@@ -929,7 +933,7 @@ GameObject:
   - component: {fileID: 311046700}
   - component: {fileID: 311046701}
   - component: {fileID: 311046702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,6 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &311046702
 LineRenderer:
@@ -1105,7 +1110,7 @@ GameObject:
   - component: {fileID: 314567941}
   - component: {fileID: 314567943}
   - component: {fileID: 314567944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,6 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &314567944
 LineRenderer:
@@ -1277,13 +1283,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346475198}
-  - component: {fileID: 346475203}
   - component: {fileID: 346475201}
   - component: {fileID: 346475200}
   - component: {fileID: 346475199}
   - component: {fileID: 346475202}
   - component: {fileID: 346475204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wrist.Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,23 +1383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 362332154}
+  _objectToMove: {fileID: 362332152}
   _contacts: []
---- !u!54 &346475203
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346475197}
-  serializedVersion: 2
-  m_Mass: 0.05
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 3
 --- !u!120 &346475204
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1502,7 +1492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362332153}
   - component: {fileID: 362332154}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399163178}
   - component: {fileID: 399163177}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1616,7 +1606,7 @@ Transform:
   - {fileID: 1574901423}
   - {fileID: 1269296292}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &461844580
 GameObject:
@@ -1631,7 +1621,7 @@ GameObject:
   - component: {fileID: 461844583}
   - component: {fileID: 461844584}
   - component: {fileID: 461844585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,6 +1686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &461844585
 LineRenderer:
@@ -1807,7 +1798,7 @@ GameObject:
   - component: {fileID: 471543211}
   - component: {fileID: 471543212}
   - component: {fileID: 471543213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1872,6 +1863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &471543213
 LineRenderer:
@@ -1975,7 +1967,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1427392326}
     m_Modifications:
     - target: {fileID: 1870938896605422, guid: 835e735ca71bf78459fb2cababd74112, type: 3}
       propertyPath: m_Name
@@ -2011,7 +2003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4453513310108136, guid: 835e735ca71bf78459fb2cababd74112, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4453513310108136, guid: 835e735ca71bf78459fb2cababd74112, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2048,7 +2040,7 @@ PrefabInstance:
     - target: {fileID: 114567484643301796, guid: 835e735ca71bf78459fb2cababd74112,
         type: 3}
       propertyPath: _updateRootPose
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114925265787909616, guid: 835e735ca71bf78459fb2cababd74112,
         type: 3}
@@ -2159,7 +2151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &586276090
 Rigidbody:
@@ -2280,13 +2272,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596342688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.11589178, z: -0, w: 0.9932618}
   m_LocalPosition: {x: -0.157, y: 1.108, z: 0.34}
   m_LocalScale: {x: 0.063923, y: 0.063923, z: 0.063923}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 13.31, z: 0}
 --- !u!1 &655123420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,7 +2292,7 @@ GameObject:
   - component: {fileID: 655123422}
   - component: {fileID: 655123424}
   - component: {fileID: 655123425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiddleTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2364,6 +2356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &655123425
 LineRenderer:
@@ -2475,7 +2468,7 @@ GameObject:
   - component: {fileID: 671076561}
   - component: {fileID: 671076563}
   - component: {fileID: 671076564}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2540,6 +2533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &671076564
 LineRenderer:
@@ -2651,7 +2645,7 @@ GameObject:
   - component: {fileID: 722746086}
   - component: {fileID: 722746088}
   - component: {fileID: 722746089}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2716,6 +2710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &722746089
 LineRenderer:
@@ -2839,7 +2834,7 @@ GameObject:
   - component: {fileID: 741984637}
   - component: {fileID: 741984639}
   - component: {fileID: 741984640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RingTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2903,6 +2898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &741984640
 LineRenderer:
@@ -3014,7 +3010,7 @@ GameObject:
   - component: {fileID: 745661107}
   - component: {fileID: 745661109}
   - component: {fileID: 745661110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3079,6 +3075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &745661110
 LineRenderer:
@@ -3190,7 +3187,7 @@ GameObject:
   - component: {fileID: 822553526}
   - component: {fileID: 822553528}
   - component: {fileID: 822553529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ThumbTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3254,6 +3251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &822553529
 LineRenderer:
@@ -3365,7 +3363,7 @@ GameObject:
   - component: {fileID: 852740747}
   - component: {fileID: 852740748}
   - component: {fileID: 852740749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3430,6 +3428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &852740749
 LineRenderer:
@@ -3541,7 +3540,7 @@ GameObject:
   - component: {fileID: 863110111}
   - component: {fileID: 863110113}
   - component: {fileID: 863110114}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3606,6 +3605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &863110114
 LineRenderer:
@@ -3709,7 +3709,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1408573980}
     m_Modifications:
     - target: {fileID: 1870938896605422, guid: 835e735ca71bf78459fb2cababd74112, type: 3}
       propertyPath: m_Name
@@ -3772,7 +3772,7 @@ PrefabInstance:
     - target: {fileID: 114567484643301796, guid: 835e735ca71bf78459fb2cababd74112,
         type: 3}
       propertyPath: _updateRootPose
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114925265787909616, guid: 835e735ca71bf78459fb2cababd74112,
         type: 3}
@@ -3799,7 +3799,7 @@ GameObject:
   - component: {fileID: 884770973}
   - component: {fileID: 884770975}
   - component: {fileID: 884770976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3864,6 +3864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &884770976
 LineRenderer:
@@ -3975,7 +3976,7 @@ GameObject:
   - component: {fileID: 942982917}
   - component: {fileID: 942982919}
   - component: {fileID: 942982920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4040,6 +4041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &942982920
 LineRenderer:
@@ -4151,7 +4153,7 @@ GameObject:
   - component: {fileID: 951639196}
   - component: {fileID: 951639197}
   - component: {fileID: 951639198}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4216,6 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &951639198
 LineRenderer:
@@ -4327,7 +4330,7 @@ GameObject:
   - component: {fileID: 967571067}
   - component: {fileID: 967571068}
   - component: {fileID: 967571069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4392,6 +4395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &967571069
 LineRenderer:
@@ -4503,7 +4507,7 @@ GameObject:
   - component: {fileID: 1013310764}
   - component: {fileID: 1013310765}
   - component: {fileID: 1013310766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4568,6 +4572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1013310766
 LineRenderer:
@@ -4679,7 +4684,7 @@ GameObject:
   - component: {fileID: 1053548975}
   - component: {fileID: 1053548976}
   - component: {fileID: 1053548977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4744,6 +4749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1053548977
 LineRenderer:
@@ -4855,7 +4861,7 @@ GameObject:
   - component: {fileID: 1107260678}
   - component: {fileID: 1107260679}
   - component: {fileID: 1107260680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,6 +4926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1107260680
 LineRenderer:
@@ -5031,7 +5038,7 @@ GameObject:
   - component: {fileID: 1140187566}
   - component: {fileID: 1140187567}
   - component: {fileID: 1140187568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5096,6 +5103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1140187568
 LineRenderer:
@@ -5207,7 +5215,7 @@ GameObject:
   - component: {fileID: 1235087898}
   - component: {fileID: 1235087900}
   - component: {fileID: 1235087901}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PinkyTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5271,6 +5279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1235087901
 LineRenderer:
@@ -5382,7 +5391,7 @@ GameObject:
   - component: {fileID: 1267963337}
   - component: {fileID: 1267963339}
   - component: {fileID: 1267963340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PinkyTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5446,6 +5455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1267963340
 LineRenderer:
@@ -5554,7 +5564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269296292}
   - component: {fileID: 1269296293}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5655,7 +5665,7 @@ GameObject:
   - component: {fileID: 1296201359}
   - component: {fileID: 1296201358}
   - component: {fileID: 1296201357}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5735,7 +5745,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321433281
 GameObject:
@@ -5750,7 +5760,7 @@ GameObject:
   - component: {fileID: 1321433283}
   - component: {fileID: 1321433285}
   - component: {fileID: 1321433286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IndexTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5814,6 +5824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1321433286
 LineRenderer:
@@ -5925,7 +5936,7 @@ GameObject:
   - component: {fileID: 1336706540}
   - component: {fileID: 1336706542}
   - component: {fileID: 1336706543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiddleTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5989,6 +6000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1336706543
 LineRenderer:
@@ -6087,6 +6099,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!4 &1408573980 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691925042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1427392326 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691925042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1469572598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6096,13 +6120,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469572599}
-  - component: {fileID: 1469572604}
   - component: {fileID: 1469572602}
   - component: {fileID: 1469572601}
   - component: {fileID: 1469572600}
   - component: {fileID: 1469572603}
   - component: {fileID: 1469572605}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wrist.Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6197,23 +6220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1574901424}
+  _objectToMove: {fileID: 1574901422}
   _contacts: []
---- !u!54 &1469572604
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469572598}
-  serializedVersion: 2
-  m_Mass: 0.05
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 3
 --- !u!120 &1469572605
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6324,7 +6332,7 @@ GameObject:
   - component: {fileID: 1483883889}
   - component: {fileID: 1483883891}
   - component: {fileID: 1483883892}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Middle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6389,6 +6397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1483883892
 LineRenderer:
@@ -6500,7 +6509,7 @@ GameObject:
   - component: {fileID: 1536426594}
   - component: {fileID: 1536426596}
   - component: {fileID: 1536426597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6565,6 +6574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1536426597
 LineRenderer:
@@ -6673,7 +6683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537564814}
   - component: {fileID: 1537564815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6775,7 +6785,7 @@ GameObject:
   - component: {fileID: 1561241207}
   - component: {fileID: 1561241208}
   - component: {fileID: 1561241209}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6840,6 +6850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1561241209
 LineRenderer:
@@ -6948,7 +6959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1574901423}
   - component: {fileID: 1574901424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7005,7 +7016,7 @@ GameObject:
   - component: {fileID: 1623598944}
   - component: {fileID: 1623598945}
   - component: {fileID: 1623598946}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7070,6 +7081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1623598946
 LineRenderer:
@@ -7181,7 +7193,7 @@ GameObject:
   - component: {fileID: 1671133449}
   - component: {fileID: 1671133451}
   - component: {fileID: 1671133452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7246,6 +7258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1671133452
 LineRenderer:
@@ -7418,7 +7431,7 @@ GameObject:
   - component: {fileID: 1702562339}
   - component: {fileID: 1702562341}
   - component: {fileID: 1702562342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7483,6 +7496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1702562342
 LineRenderer:
@@ -7594,7 +7608,7 @@ GameObject:
   - component: {fileID: 1743062941}
   - component: {fileID: 1743062943}
   - component: {fileID: 1743062944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7659,6 +7673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1743062944
 LineRenderer:
@@ -7770,7 +7785,7 @@ GameObject:
   - component: {fileID: 1751619351}
   - component: {fileID: 1751619353}
   - component: {fileID: 1751619354}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ThumbTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7834,6 +7849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1751619354
 LineRenderer:
@@ -7945,7 +7961,7 @@ GameObject:
   - component: {fileID: 1760235683}
   - component: {fileID: 1760235685}
   - component: {fileID: 1760235686}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RingTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8009,6 +8025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1760235686
 LineRenderer:
@@ -8120,7 +8137,7 @@ GameObject:
   - component: {fileID: 1811785894}
   - component: {fileID: 1811785896}
   - component: {fileID: 1811785897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: IndexTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8184,6 +8201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1811785897
 LineRenderer:
@@ -8295,7 +8313,7 @@ GameObject:
   - component: {fileID: 1829501368}
   - component: {fileID: 1829501370}
   - component: {fileID: 1829501371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8360,6 +8378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1829501371
 LineRenderer:
@@ -8471,7 +8490,7 @@ GameObject:
   - component: {fileID: 1836260566}
   - component: {fileID: 1836260568}
   - component: {fileID: 1836260569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Index3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8536,6 +8555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1836260569
 LineRenderer:
@@ -8647,7 +8667,7 @@ GameObject:
   - component: {fileID: 1911640301}
   - component: {fileID: 1911640302}
   - component: {fileID: 1911640303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8712,6 +8732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1911640303
 LineRenderer:
@@ -8823,7 +8844,7 @@ GameObject:
   - component: {fileID: 1924156805}
   - component: {fileID: 1924156806}
   - component: {fileID: 1924156807}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8888,6 +8909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &1924156807
 LineRenderer:
@@ -8996,7 +9018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1990109609}
   - component: {fileID: 1990109608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9056,7 +9078,7 @@ Transform:
   - {fileID: 362332153}
   - {fileID: 1537564814}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1996430619 stripped
 MonoBehaviour:
@@ -9083,7 +9105,7 @@ GameObject:
   - component: {fileID: 2019346444}
   - component: {fileID: 2019346446}
   - component: {fileID: 2019346447}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9148,6 +9170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &2019346447
 LineRenderer:
@@ -9259,7 +9282,7 @@ GameObject:
   - component: {fileID: 2058351392}
   - component: {fileID: 2058351394}
   - component: {fileID: 2058351395}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9323,6 +9346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &2058351395
 LineRenderer:
@@ -9434,7 +9458,7 @@ GameObject:
   - component: {fileID: 2084288893}
   - component: {fileID: 2084288895}
   - component: {fileID: 2084288896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9499,6 +9523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &2084288896
 LineRenderer:
@@ -9610,7 +9635,7 @@ GameObject:
   - component: {fileID: 2089772079}
   - component: {fileID: 2089772081}
   - component: {fileID: 2089772082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ring2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9675,6 +9700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _objectToMove: {fileID: 0}
   _contacts: []
 --- !u!120 &2089772082
 LineRenderer:

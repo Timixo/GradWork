@@ -30,13 +30,13 @@ public class FollowHandData : MonoBehaviour
             return;
 
         _wristPhalange.SetPhalange(_skeletonData.Bones[0].Transform);
-        _bones[0].position = _skeletonData.Bones[0].Transform.position;
-        _bones[0].rotation = _skeletonData.Bones[0].Transform.rotation;
+        _wristPhalange.MovePhalangeToPos(_skeletonData.Bones[0].Transform.position);
+        _wristPhalange.RotatePhalangeToRot(_skeletonData.Bones[0].Transform.rotation);
 
         for (int bone = 1; bone < _skeletonData.Bones.Count; bone++)
         {
             _phalanges[bone].SetPhalange(_skeletonData.Bones[bone].Transform);
-            _bones[bone].rotation = _skeletonData.Bones[bone].Transform.rotation;
+            _phalanges[bone].RotatePhalangeToRot(_skeletonData.Bones[bone].Transform.rotation);
         }
     }
 }

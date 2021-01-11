@@ -6,6 +6,8 @@ using System.Linq;
 
 public class Phalange : MonoBehaviour
 {
+    private static int _contactCounter = 0;
+    
     private static float _deltaOrigin = 0.0001f;
 
     [Serializable]
@@ -21,6 +23,10 @@ public class Phalange : MonoBehaviour
     [SerializeField]
     private Rigidbody _rigidbody = null;
 
+    [Tooltip("Leave empty if the gameobject to move is this object")]
+    [SerializeField]
+    private GameObject _objectToMove = null;
+
     private Collider _collider = null;
 
     [SerializeField]
@@ -34,6 +40,10 @@ public class Phalange : MonoBehaviour
     {
         _collider = GetComponent<Collider>();
         _lineRenderer = GetComponent<LineRenderer>();
+        if (!_rigidbody)
+            _rigidbody = GetComponent<Rigidbody>();
+        if (!_objectToMove)
+            _objectToMove = this.gameObject;
     }
 
     private void FixedUpdate()
@@ -52,19 +62,21 @@ public class Phalange : MonoBehaviour
             {
                 if (contact._object == hitInfo.collider.gameObject)
                 {
-
+                    contact._objectCollider.attachedRigidbody.AddForceAtPosition(maxDistance * direction, contact._hitInfo.point, ForceMode.Force);
                 }
                 else
                 {
                     _contacts.Remove(contact);
+                    _contactCounter--;
                 }
             }
             else
             {
                 _contacts.Remove(contact);
+                _contactCounter--;
             }
         }
-        if (_contacts.Count == 0)
+        if (_contactCounter == 0)
         {
             _collider.isTrigger = false;
             _lineRenderer.enabled = false;
@@ -98,30 +110,26 @@ public class Phalange : MonoBehaviour
 
             _lineRenderer.enabled = true;
             _lineRenderer.positionCount = 2;
-            _lineRenderer.SetPositions(new Vector3[] { hitInfo.point, hitInfo.point + 10 * direction });
+            _lineRenderer.SetPositions(new Vector3[] { hitInfo.point, hitInfo.point + 2 * direction });
+
+            _contactCounter++;
         }
     }
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (!other.CompareTag("Object"))
-    //        return;
-
-    //    GameObject gameObject = other.gameObject;
-    //    for (int contact = 0; contact < _contacts.Count; contact++)
-    //    {
-    //        if (gameObject == _contacts[contact]._object)
-    //        {
-    //            Debug.Log("Object exited");
-    //            _lineRenderer.positionCount = 0;
-    //            _lineRenderer.SetPositions(new Vector3[] { });
-    //            _contacts.RemoveAt(contact);
-    //        }
-    //    }
-    //}
 
     public void SetPhalange(Transform phalange)
     {
         _actualPhalangeTransform = phalange;
+    }
+
+    public void MovePhalangeToPos(Vector3 position)
+    {
+        if (_contactCounter == 0)
+            _objectToMove.transform.position = position;
+    }
+
+    public void RotatePhalangeToRot(Quaternion rotation)
+    {
+        if (_contactCounter == 0)
+            _objectToMove.transform.rotation = rotation;
     }
 }
