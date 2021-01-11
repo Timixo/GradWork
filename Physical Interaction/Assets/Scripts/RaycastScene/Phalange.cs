@@ -108,9 +108,9 @@ public class Phalange : MonoBehaviour
 
             _collider.isTrigger = true;
 
-            _lineRenderer.enabled = true;
-            _lineRenderer.positionCount = 2;
-            _lineRenderer.SetPositions(new Vector3[] { hitInfo.point, hitInfo.point + 2 * direction });
+            //_lineRenderer.enabled = true;
+            //_lineRenderer.positionCount = 2;
+            //_lineRenderer.SetPositions(new Vector3[] { hitInfo.point, hitInfo.point + 2 * direction });
 
             _contactCounter++;
         }
