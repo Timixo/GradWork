@@ -1,9 +1,7 @@
 # Physical Interaction
-======================
 Unity project where hand tracking is used to interact with physical objects using the Oculus Quest.
 
 ## Project
-----------
 There are 2 scenes in the project.
 
 ### Joint system
